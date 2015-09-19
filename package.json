@@ -28,6 +28,9 @@
   },
   "homepage": "https://github.com/bense4ger/arrayrange#readme",
   "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jsdoc-to-markdown": "^1.1.1",
     "jasmine": "^2.3.2"
   }
 }
