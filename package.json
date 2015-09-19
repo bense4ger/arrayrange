@@ -1,0 +1,33 @@
+{
+  "name": "arrayrange",
+  "version": "0.0.1",
+  "description": "A simple helper which finds the minimum and maximum values, and the range, from an array",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bense4ger/arrayrange.git"
+  },
+  "keywords": [
+    "array",
+    "helper",
+    "min",
+    "minimum",
+    "max",
+    "maximum",
+    "range",
+    "array-min",
+    "array-max"
+  ],
+  "author": "Ben Seager",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bense4ger/arrayrange/issues"
+  },
+  "homepage": "https://github.com/bense4ger/arrayrange#readme",
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  }
+}
