@@ -4,7 +4,7 @@
   "description": "A simple helper which finds the minimum and maximum values, and the range, from an array",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "istanbul cover --include-all-sources ./node_modules/jasmine/bin/jasmine.js -x **/spec/** && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -28,9 +28,11 @@
   },
   "homepage": "https://github.com/bense4ger/arrayrange#readme",
   "devDependencies": {
+    "coveralls": "^2.11.4",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-jsdoc-to-markdown": "^1.1.1",
+    "istanbul": "^0.3.20",
     "jasmine": "^2.3.2"
   }
 }
