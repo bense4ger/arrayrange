@@ -2,13 +2,13 @@
 
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
-	toMarkdown = require('gulp-js-doc-to-markdown');
+	toMarkdown = require('gulp-jsdoc-to-markdown');
 	
 gulp.task('create-docs', function(){
 	return gulp.src('lib/**/*.js')
 		.pipe(concat('api.md'))
 		.pipe(toMarkdown())
-		.pipe('./docs');
+		.pipe(gulp.dest('./docs'));
 });
 
-gulp.taks('default', ['create-docs'], function(){});
+gulp.task('default', ['create-docs'], function(){});

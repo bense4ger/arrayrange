@@ -4,6 +4,12 @@ var passingSource = [1,2,3,4,5];
 var passingSourceMixed = [1,2,3,'foo',5];
 var failingSource = ['foo', 'bar'];
 
+describe('utils', function(){
+	it('should be defined', function(){
+		expect(utils).toBeDefined();
+	});
+});
+
 describe('max', function(){
 	var actual, expected;
 	beforeAll(function(){
