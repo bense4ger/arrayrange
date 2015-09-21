@@ -11,7 +11,7 @@ npm install arrayrange
 
 ## Usage
 
-A full guide to the API can be found [here](docs/api).
+A full guide to the API can be found [here](/docs/api).
 
 ### Minimum value
 [**arrayrange.min**](docs/api#minarray--number)
