@@ -11,24 +11,24 @@ npm install arrayrange
 
 ## Usage
 
-A full guide to the API can be found [here](../tree/master/docs/api).
+A full guide to the API can be found [here](docs/api).
 
 ### Minimum value
-[**arrayrange.min**](../tree/master/docs/api#minarray--number)
+[**arrayrange.min**](docs/api#minarray--number)
 ```javascript
 var arrayRange = require('arrayrange');
 var min = arrayRange.min(someArray);
 ```
 
 ### Maximum value
-[**arrayrange.max**](../tree/master/docs/api#maxarray--number)
+[**arrayrange.max**](docs/api#maxarray--number)
 ```javascript
 var arrayRange = require('arrayrange');
 var max = arrayRange.max(someArray);
 ```
 
 ### Range
-[**arrayrange.range**](../tree/master/docs/api#rangearray--number)
+[**arrayrange.range**](docs/api#rangearray--number)
 ```javascript
 var arrayRange = require('arrayrange');
 var range = arrayRange.range(someArray);
