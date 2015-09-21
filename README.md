@@ -1,5 +1,5 @@
 # arrayrange
----
+
 [![Build Status](https://travis-ci.org/bense4ger/arrayrange.svg?branch=master)](https://travis-ci.org/bense4ger/arrayrange) [![Coverage Status](https://coveralls.io/repos/bense4ger/arrayrange/badge.svg?branch=master&service=github)](https://coveralls.io/github/bense4ger/arrayrange?branch=master) 
 
 A simple, lightweight utility which calculates the minimum and maximum values in an array, and the range between the values.
@@ -11,24 +11,24 @@ npm install arrayrange
 
 ## Usage
 
-A full guide to the API can be found [here](../docs/api).
+A full guide to the API can be found [here](../tree/master/docs/api).
 
 ### Minimum value
-[**arrayrange.min**](../docs/api#min)
+[**arrayrange.min**](../tree/master/docs/api#minarray--number)
 ```javascript
 var arrayRange = require('arrayrange');
 var min = arrayRange.min(someArray);
 ```
 
 ### Maximum value
-[**arrayrange.max**](../docs/api#max)
+[**arrayrange.max**](../tree/master/docs/api#maxarray--number)
 ```javascript
 var arrayRange = require('arrayrange');
 var max = arrayRange.max(someArray);
 ```
 
 ### Range
-[**arrayrange.range**](../docs/api#range)
+[**arrayrange.range**](../tree/master/docs/api#rangearray--number)
 ```javascript
 var arrayRange = require('arrayrange');
 var range = arrayRange.range(someArray);
