@@ -14,7 +14,7 @@ npm install arrayrange
 A full guide to the API can be found [here](./docs/api).
 
 ### Minimum value
-[**arrayrange.min**](docs/api#minarray--number)
+[**arrayrange.min**](docs/api.md#minarray--number)
 ```javascript
 var arrayRange = require('arrayrange');
 var min = arrayRange.min(someArray);
