@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- '4.0.0'
+- 4.0.0
 - '0.12'
 - '0.11'
 - '0.10'
@@ -10,3 +10,5 @@ deploy:
   email: npm@benseager.co.uk
   on:
     branch: release
+  api_key:
+    secure: xwgcFXz1Mw8Kjwk8SzD5/QlIYuS0ImSkM81UrFwKo0+SDzIkN70bk+3C1NHFaSDqnhxc9IqkvhFYhXJoEq3Giy2MCowMFkGK4ijvwkPDLlRggrWN9GJDjLh5s10ndrqerEE+78BhW2ANt8hLmqBPYD36NN2tGvg8liMlWUgTLbS7Mms0e8xDLImuHShgEYErhtEgOYwdO1/2IqRHURUYMLsMf/CDs39NiNyTBRar5AJqyxXF/Bip5rCGDwwLlaL4oGpZli4HWlz0AzajIWzKR7lIX8Owvv9hQKjZDQtzLRzxJyAn69iSphgfzI4Um3leJynXVKea+7OA9fzSYdWphUt6j0doivybMdntzMqHrzdQYVbJfxJgFbvxjEKvXynUdBlaiwB+MODY6WkqBUihPJHNh25ScAWxSDx5k8dO7aXgBuqxadlyogIPvLcT1B/pSJFlTRqjshW8ZG4khP5YX9aYR1A6R3oFDHGH5ULIcjWHT1Efmd3HQGs55mjs7Vx6O9wOHSIXUJNhNQ0gNUBx/4/ZBWxuvMS9DnFPaRDRrDArht4ecc8ARd3Z4zjxSq84plLA5bVlcY6RfaWK38MJnSw/07M1RwcHjQy9R3Kv5NMqod+CRGkdjiCY7qGG5JJIl0YaM8n74QcwJXGGummq6iODWPqWpK/MAfp1HWDhwpo=
