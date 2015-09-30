@@ -1,5 +1,8 @@
+'use strict';
+
 var utils = require('../lib/utils'),
 	now = require('performance-now');
+	
 (function(){
 	function Performance(){}
 	
