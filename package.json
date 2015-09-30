@@ -33,6 +33,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-jsdoc-to-markdown": "^1.1.1",
     "istanbul": "^0.3.20",
-    "jasmine": "^2.3.2"
+    "jasmine": "^2.3.2",
+    "performance-now": "^0.2.0"
   }
 }
