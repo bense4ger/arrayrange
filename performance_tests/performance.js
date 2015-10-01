@@ -1,8 +1,9 @@
 'use strict';
-
+/* istanbul ignore next */
 var utils = require('../lib/utils'),
 	now = require('performance-now');
-	
+
+/* istanbul ignore next */	
 (function(){
 	function Performance(){}
 	
