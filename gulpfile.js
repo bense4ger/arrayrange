@@ -14,7 +14,7 @@ gulp.task('create-docs', function(){
 });
 
 /* istanbul ignore next */
-gulp.task('performance-test', function(){
+gulp.task('performance', function(){
 	performance.run();
 });
 

@@ -7,16 +7,29 @@ var utils = require('../lib/utils'),
 (function(){
 	function Performance(){}
 	
-	var generateArray = function(){
+	var generateRandomString = function(){
+		var stringLength = Math.floor(Math.random() * 15);
+		var letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		var randomString = [stringLength];
+		for(var i = 0; i < stringLength; i++){
+			randomString[i] = letters.charAt(Math.floor(Math.random() * letters.length));
+		}
+		return randomString.join();
+	};
+	
+	var generateArray = function(arrayType){
 		var array = [1000000];
 		for(var i = 0; i < 1000000; i++){
-			array[i] = Math.floor(Math.random() * (10000000 - 0 + 1));
+			array[i] = arrayType === 'number' 
+				? Math.floor(Math.random() * (10000000 + 1))
+				: generateRandomString();
 		}
 		return array;
-	}
+	};
 	
 	var tests = {
-		sort_vs_unsorted : function(array){
+		sort_vs_unsorted : function(){
+			var array = generateArray('number');
 			var originalArray = array;
 			var lastIndex = array.length - 1;
 			
@@ -79,13 +92,51 @@ var utils = require('../lib/utils'),
 			console.log('Sorted max:' + mar1);
 			console.log('Unsorted range:' + rr0);
 			console.log('Sorted range:' + rr1);
+		},
+		string_array : function(){
+			var array = generateArray('string');
+			var t0, t1, t2, t3, r0, r1;
+			console.log('Started string_array');
+			
+			var stringToNumber = function(theString){
+				var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+				var result;
+				for(var i = 0; i < theString.length; i++){
+					var lower = theString.charAt(i).toLowerCase();
+					for(var j = 0; j < alphabet.length; j++){
+						result += (alphabet.charAt(j) === lower) 
+							? j + 1
+							: 0;
+					}
+				}
+				
+				return result;
+			};
+			
+			var numberArray = [array.length];
+			t0 = now();
+			array.forEach(function(val, ix){
+				numberArray[ix] = stringToNumber(val);
+			});
+			utils.min(numberArray);
+			t1 = now();
+			r0 = t1 - t0;
+			
+			t2 = now();
+			array.sort();
+			var min = array[0];
+			t3 = now();
+			r1 = t3 - t2;
+			
+			console.log('Completed string_array');
+			console.log('Without sort' + r0);
+			console.log('With sort:' +  r1); 
 		}
 	}
 	
 	Performance.prototype.run = function(){
-		var testArray = generateArray();
 		Object.getOwnPropertyNames(tests).forEach(function(func){
-			tests[func].call(this, testArray);
+			tests[func].call(this);
 		});
 	}
 	
