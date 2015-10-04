@@ -15,7 +15,7 @@ Static class which encapsulates the min, max and range functions
 
 | Param | Type | Description |
 | --- | --- | --- |
-| array | <code>Array.&lt;number&gt;</code> | The array of values to be inspected |
+| array | <code>Array.&lt;number&gt;</code> &#124; <code>Array.&lt;string&gt;</code> | The array of values to be inspected |
 
 <a name="min"></a>
 ## .min(array) ⇒ <code>number</code>

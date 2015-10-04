@@ -26,7 +26,7 @@ describe('max', function(){
 	var actual, expected;
 	beforeAll(function(){
 		actual = utils.max(passingSourceString);
-		expected = 'Foo';
+		expected = 'foo';
 	});
 	it('should find the maximum string in the array', function(){
 		expect(actual).toEqual(expected);
