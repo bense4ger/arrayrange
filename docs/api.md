@@ -4,7 +4,7 @@ Static class which encapsulates the min, max and range functions
 
 **Kind**: static class  
 <a name="max"></a>
-## .max(array) ⇒ <code>number</code>
+## .max(array) ⇒ <code>number</code> &#124; <code>string</code>
 **Kind**: static function  
 **Summary**: Finds the maximum value in the array  
 **Throws**:
@@ -18,7 +18,7 @@ Static class which encapsulates the min, max and range functions
 | array | <code>Array.&lt;number&gt;</code> &#124; <code>Array.&lt;string&gt;</code> | The array of values to be inspected |
 
 <a name="min"></a>
-## .min(array) ⇒ <code>number</code>
+## .min(array) ⇒ <code>number</code> &#124; <code>string</code>
 **Kind**: static function  
 **Summary**: finds the minimum value in the array  
 **Throws**:
@@ -29,7 +29,7 @@ Static class which encapsulates the min, max and range functions
 
 | Param | Type | Description |
 | --- | --- | --- |
-| array | <code>Array.&lt;number&gt;</code> | The array of values to be inspected |
+| array | <code>Array.&lt;number&gt;</code> &#124; <code>Array.&lt;string&gt;</code> | The array of values to be inspected |
 
 <a name="range"></a>
 ## .range(array) ⇒ <code>number</code>
@@ -43,5 +43,5 @@ Static class which encapsulates the min, max and range functions
 
 | Param | Type | Description |
 | --- | --- | --- |
-| array | <code>Array.&lt;number&gt;</code> | The array of values to be inspected |
+| array | <code>Array.&lt;number&gt;</code> &#124; <code>Array.&lt;string&gt;</code> | The array of values to be inspected |
 
