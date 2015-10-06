@@ -1,6 +1,6 @@
 # arrayrange
 
-[![Build Status](https://travis-ci.org/bense4ger/arrayrange.svg?branch=master)](https://travis-ci.org/bense4ger/arrayrange) [![Coverage Status](https://coveralls.io/repos/bense4ger/arrayrange/badge.svg?branch=master&service=github)](https://coveralls.io/github/bense4ger/arrayrange?branch=master) 
+[![Build Status](https://travis-ci.org/bense4ger/arrayrange.svg?branch=master)](https://travis-ci.org/bense4ger/arrayrange) [![Coverage Status](https://coveralls.io/repos/bense4ger/arrayrange/badge.svg?branch=master&service=github)](https://coveralls.io/github/bense4ger/arrayrange?branch=master)[![Inline docs](http://inch-ci.org/github/bense4ger/arrayrange.svg?branch=master)](http://inch-ci.org/github/bense4ger/arrayrange)
 
 A simple, lightweight utility which calculates the minimum and maximum values in an array, and the range between the values.
 
