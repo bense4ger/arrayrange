@@ -81,7 +81,7 @@ describe('range', function(){
 describe('range', function(){
 	var actual, expected;
 	beforeAll(function(){
-		actual = utils.range(passingSource);
+		actual = utils.range(passingSourceString);
 		expected = 4;
 	});
 	it('should calculate the range between the min and max in a string array', function(){
