@@ -1,6 +1,6 @@
 {
   "name": "arrayrange",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple helper which finds the minimum and maximum values, and the range, from an array",
   "main": "index.js",
   "scripts": {
