@@ -78,16 +78,6 @@ describe('range', function(){
 	});
 });
 
-describe('range', function(){
-	var actual, expected;
-	beforeAll(function(){
-		actual = utils.range(passingSourceString);
-		expected = 4;
-	});
-	it('should calculate the range between the min and max in a string array', function(){
-		expect(actual).toEqual(expected);
-	});
-});
 
 describe('range', function(){
 	it('should throw and error if an array of non-numeric or non-string values is passed', function(){
