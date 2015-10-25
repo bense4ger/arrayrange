@@ -6,6 +6,9 @@
   "scripts": {
     "test": "istanbul cover --include-all-sources ./node_modules/jasmine/bin/jasmine.js -x **/spec/** && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
+  "engines":{
+    "node" : ">= 10.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bense4ger/arrayrange.git"
